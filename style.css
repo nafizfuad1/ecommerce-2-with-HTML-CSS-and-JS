@@ -242,7 +242,6 @@ ul li {
 /* product right section style here  */
 .uppercase {
   text-transform: uppercase;
-  
 }
 .new {
   border-left: black 4px solid;
@@ -320,7 +319,7 @@ ul li {
   border-radius: 2px;
   cursor: pointer;
 }
-.size-box-list li:hover{
+.size-box-list li:hover {
   background: #6e6e6e;
   color: white;
 }
@@ -382,42 +381,82 @@ ul li {
   font-size: 14px;
   color: #444444;
 }
-#shopping-delivery{
+#shopping-delivery {
   margin: 32px 0;
 }
-.description-title{
+.description-title {
   font-size: 14px;
   margin-top: 12px;
 }
-.power-title{
+.power-title {
   margin: 20px 0px 42px 0px;
-  font-size: 16px ;
+  font-size: 16px;
   color: #444444;
 }
-.power-details{
-  font-size: 16px ;
+.power-details {
+  font-size: 16px;
   color: #444444;
   margin-bottom: 26px;
 }
-.power-ul{
+.power-ul {
   margin-bottom: 24px;
 }
-.power-ul li{
+.power-ul li {
   font-size: 15px;
   color: #444444;
   font-family: roboto;
   margin-bottom: 5px;
 }
-.delivery-return{
+.delivery-return {
   font-size: 14px;
   margin: 10px 0 14px 10px;
 }
-.right-ending{
+.right-ending {
   margin: 33px 0;
   display: flex;
   gap: 10px;
   align-items: center;
   font-size: 14px;
+}
+.product-page-slide {
+  padding: 50px 0 180px 0;
+}
+.option-slide {
+  display: flex;
+  gap: 32px;
+
+  justify-content: center;
+  align-items: center;
+}
+.slide-text {
+  font-size: 16px;
+  font-family: montserrat;
+  color: #6e6e6e;
+  padding: 12px;
+  cursor: pointer;
+}
+.slide-text.active {
+  color: #000;
+}
+.option-slide-bar {
+  height: 2px;
+  width: 340px;
+  background: #c2c0c0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.option-slide-bar-child {
+  position: absolute;
+  height: 2px;
+  width: 170px;
+  background: #000;
+  left: 0;
+  transition: transform 0.35s ease;
+}
+
+.option-slide-bar-child.right {
+  transform: translateX(170px);
 }
 @media screen and (max-width: 768px) {
   .all-navbar {
@@ -426,11 +465,11 @@ ul li {
   .nav-mobile {
     display: block;
   }
-  .product-page-upper{
+  .product-page-upper {
     display: flex;
     flex-direction: column;
   }
-  .product-page-upper-right{
+  .product-page-upper-right {
     padding: 0 20px;
   }
   .product-images {
