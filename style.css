@@ -695,6 +695,9 @@ footer {
   .product-page-upper-right {
     padding: 0 20px;
   }
+  .page-menu-list{
+    display: none;
+  }
   .product-images {
     display: grid;
     gap: 10px;
