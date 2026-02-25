@@ -852,7 +852,6 @@ footer {
   align-items: end;
   flex-direction: column;
   justify-content: center;
-  padding-right: 60px;
 }
 .right {
   background: url("../img/section9-2bg.png") no-repeat center center/ cover;
@@ -862,11 +861,66 @@ footer {
   align-items: start;
   flex-direction: column;
   justify-content: center;
+}
+.section10-half-body-left {
+  padding-right: 60px;
+}
+.section10-half-body-right {
   padding-left: 60px;
 }
+
 .section10-title {
   font-size: 32px;
   margin-bottom: 21px;
+  font: bold;
+}
+.section11-cards {
+  display: flex;
+  gap: 11px;
+  padding: 30px 20px;
+}
+.section11-card {
+  height: 310px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+#section11-card1 {
+  background: url("../img/section11-1.png") no-repeat center center/ cover;
+}
+#section11-card2 {
+  background: url("../img/section11-2.png") no-repeat center center/ cover;
+}
+#section11-card3 {
+  background: url("../img/section11-3.png") no-repeat center center/ cover;
+}
+.section11-title {
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+.section12 {
+  background: white;
+  padding: 77px 30px 56px;
+  border-bottom: #bbbcbc 1px solid;
+}
+.section12-content {
+  padding: 33px 78px 33px 33px;
+  border: #e7e7e7 1px solid;
+}
+.section12-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.section12-text {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.section12-first-p {
+  margin: 18px 0;
 }
 @media screen and (max-width: 768px) {
   .all-navbar {
@@ -1011,7 +1065,40 @@ footer {
   .section10-content {
     flex-direction: column;
   }
-  .left , .right {
+  .left,
+  .right {
     height: 230px;
+  }
+  /* section 4 responsive  */
+  #section4 {
+    align-items: center;
+  }
+  /* section 8 */
+  #section8 {
+    justify-content: center;
+    align-items: center;
+  }
+  #section8-content {
+    align-items: center;
+  }
+  #section9-content {
+    align-items: center;
+  }
+  /* section 11 slider  */
+  .section11-cards {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 10px;
+  }
+
+  .section11-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section11-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 }
