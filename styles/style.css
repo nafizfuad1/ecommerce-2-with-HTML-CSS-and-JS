@@ -713,26 +713,27 @@ footer {
 /* home page section 1 sty;e  */
 .home-card-section1 {
   background: white;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
-.card-section-title{
+.card-section-title {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #53565A;
+  color: #53565a;
   font-weight: 500;
 }
-.card-section-flex{
+.card-section-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.card-section-heading{
+.card-section-heading {
   font-size: 25px;
   font-weight: bold;
 }
-.viewAll{
+.viewAll {
   font-size: 16px;
+  cursor: pointer;
 }
 .card-section-card {
   max-width: 320px;
@@ -769,11 +770,43 @@ footer {
   margin: 5px 0;
 }
 /* section 1 card style  */
-.card-section-cards{
+.card-section-cards {
   display: flex;
+  gap: 14px;
   justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
-
+.card-section-cards::-webkit-scrollbar {
+  display: none;
+}
+/* section-2  */
+#section2 {
+  background: url("../img/section2.png") no-repeat center center/ cover;
+}
+.section2-buttons {
+  display: flex;
+  gap: 30px;
+}
+.section2-buttons  button{
+  border: none;
+}
+.men-button {
+  border-radius: 50px;
+  padding: 15px 28px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #53565A;
+  color: white;
+}
+.section2-content{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .all-navbar {
     display: none;
@@ -858,4 +891,60 @@ footer {
   .hero-content {
     margin: 0 30px 50px;
   }
+  /* home section cards  */
+  /* mobile slider */
+  .card-section-cards {
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 10px;
+  }
+
+  .card-section-cards::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+  }
+
+  .card-section-card {
+    /* min-width: 260px;  */
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  .card-section-card img {
+    height: 193px;
+  }
+  .cloth-type {
+    width: 160px;
+  }
+  .card-section-flex {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .home-card-section1 {
+    padding: 30px 20px;
+  }
+  /* section 2 responsive  */
+  .section2-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.men-button {
+  border-radius: 50px;
+  padding: 15px 28px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #53565A;
+  color: white;
+}
+.section2-content{
+  margin: 0 0 77px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 }
