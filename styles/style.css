@@ -686,12 +686,14 @@ footer {
 
 /* Home Page design  */
 .hero {
-  background: url("../img/hero-bg.png") no-repeat center center/ cover;
   color: white;
   height: 644px;
   display: flex;
   justify-content: start;
   align-items: center;
+}
+#section1 {
+  background: url("../img/hero-bg.png") no-repeat center center/ cover;
 }
 .hero-content {
   margin-left: 60px;
@@ -709,6 +711,7 @@ footer {
   padding: 15px 28px;
   font-size: 13px;
   font-weight: bold;
+  border: none;
 }
 /* home page section 1 sty;e  */
 .home-card-section1 {
@@ -789,7 +792,7 @@ footer {
   display: flex;
   gap: 30px;
 }
-.section2-buttons  button{
+.section2-buttons button {
   border: none;
 }
 .men-button {
@@ -797,15 +800,18 @@ footer {
   padding: 15px 28px;
   font-size: 13px;
   font-weight: bold;
-  background: #53565A;
+  background: #53565a;
   color: white;
 }
-.section2-content{
+.section2-content {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+#section4 {
+  background: url("../img/section4-bg.png") no-repeat center center/ cover;
 }
 @media screen and (max-width: 768px) {
   .all-navbar {
@@ -929,22 +935,22 @@ footer {
   }
   /* section 2 responsive  */
   .section2-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.men-button {
-  border-radius: 50px;
-  padding: 15px 28px;
-  font-size: 13px;
-  font-weight: bold;
-  background: #53565A;
-  color: white;
-}
-.section2-content{
-  margin: 0 0 77px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .men-button {
+    border-radius: 50px;
+    padding: 15px 28px;
+    font-size: 13px;
+    font-weight: bold;
+    background: #53565a;
+    color: white;
+  }
+  .section2-content {
+    margin: 0 0 77px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
