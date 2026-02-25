@@ -813,6 +813,9 @@ footer {
 #section4 {
   background: url("../img/section4-bg.png") no-repeat center center/ cover;
 }
+#section6 {
+  background: url("../img/section6-bg.png") no-repeat center center/ cover;
+}
 @media screen and (max-width: 768px) {
   .all-navbar {
     display: none;
