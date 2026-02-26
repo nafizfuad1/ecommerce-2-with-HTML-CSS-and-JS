@@ -963,6 +963,9 @@ footer {
   color: #797979;
   font-weight: bold;
 }
+#category-section2 {
+  background: url("../img/category-s2.png") no-repeat center center/ cover;
+}
 /* responsive code here  */
 @media screen and (max-width: 768px) {
   .all-navbar {
