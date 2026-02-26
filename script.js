@@ -23,7 +23,7 @@ tabs.forEach((tab) => {
   });
 });
 
-// PDP slider
+// slider
 const initSlider = () => {
   const imageList = document.querySelector(".slide-wrapper .card-list");
   const slideButtons = document.querySelectorAll(".slider-button");
@@ -43,16 +43,18 @@ const initSlider = () => {
     });
   });
 
-  const updateScrollThumbPosition = () => {
-    const scrollPosition = imageList.scrollLeft;
-    const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+const updateScrollThumbPosition = () => {
+  const scrollPosition = imageList.scrollLeft;
 
-    const thumbPosition =
-      (scrollPosition / maxScrollLeft) *
-      (sliderScrollBar.clientWidth - sliderScrollThumb.offsetWidth);
+  const maxScrollLeft =
+    imageList.scrollWidth - imageList.clientWidth;
 
-    sliderScrollThumb.style.left = `${thumbPosition}px`;
-  };
+  const thumbPosition =
+    (scrollPosition / maxScrollLeft) *
+    (sliderScrollBar.clientWidth - sliderScrollThumb.offsetWidth);
+
+  sliderScrollThumb.style.left = `${thumbPosition}px`;
+};
 
   imageList.addEventListener("scroll", updateScrollThumbPosition);
 };
@@ -64,7 +66,9 @@ const plusIcons = document.querySelectorAll(".plus-icon");
 
 plusIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    const list = icon.parentElement.nextElementSibling.querySelector(".mobile-footer-list");
+    const list = icon.parentElement.nextElementSibling.querySelector(
+      ".mobile-footer-list",
+    );
     list.classList.toggle("active");
   });
 });
