@@ -966,12 +966,27 @@ footer {
 #category-section2 {
   background: url("../img/category-s2.png") no-repeat center center/ cover;
 }
-#category-section4{
+#category-section4 {
   background: url("../img/category-s4.png") no-repeat center center/ cover;
 }
-#category-section6{
+#category-section6 {
   background: url("../img/category-s6.png") no-repeat center center/ cover;
 }
+#category-section8 {
+  background: url("../img/category-s8.png") no-repeat center center/ cover;
+}
+.category-last-banner {
+  color: white;
+  height: 644px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.category-section8-content {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 /* responsive code here  */
 @media screen and (max-width: 768px) {
   .all-navbar {
@@ -1112,6 +1127,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: start;
+  }
+  .category-section8-content {
+    /* margin: 0 0 77px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .section10-content {
     flex-direction: column;
