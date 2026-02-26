@@ -145,11 +145,16 @@ ul li {
 }
 
 .slidebar {
-  max-width: 400px;
+  position: fixed; 
+  top: 63px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
   background: black;
-  position: absolute;
-  display: none;
-  z-index: 10;
+  z-index: 100;
+
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
 }
 .sliderbar-list li a {
   display: inline-block;
@@ -164,7 +169,7 @@ ul li {
 }
 
 .slidebar.active {
-  display: block;
+  transform: translateX(0);
 }
 
 /* ========product page style here=========== */
@@ -1236,7 +1241,7 @@ footer {
     flex: 0 0 100%;
     height: 230px;
   }
-  .category-section10-content{
+  .category-section10-content {
     padding: 0 20px;
   }
 }
